@@ -86,11 +86,12 @@ public class FileReaderWriter {
             FileWriter writer = new FileWriter(path, true);
             PrintWriter printer = new PrintWriter(writer);
             printer.println(firstName + ":" + hours);
-            System.out.println("Hours added...");
             writer.close();
         } catch (IOException i) {
             i.printStackTrace();
         }
+
+        System.out.println("Hours added...");
     }
 
     public void addHoursAsManager(String managerPath) {
